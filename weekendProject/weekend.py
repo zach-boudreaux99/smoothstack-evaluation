@@ -15,6 +15,7 @@ def get_file():
             raise TypeError()
     except:
         print("Please input a correct value: 'January' or 'March'.")
+        get_file()
 
 def get_data(month):
     if month.lower() == "january":
